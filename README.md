@@ -1,5 +1,9 @@
 # potatify
 
+## Requirements
+
++ NodeJS
+
 ## Setup
 
 Install dependencies:
