@@ -1,0 +1,14 @@
+{
+  "name": "potatify",
+  "version": "1.0.0",
+  "description": "potato",
+  "main": "index.js",
+  "scripts": {
+    "potatify": "node index.js"
+  },
+  "author": "potato",
+  "license": "MATT",
+  "dependencies": {
+    "gm": "^1.21.1"
+  }
+}
