@@ -1,7 +1,7 @@
 {
   "name": "potatify",
   "version": "1.0.0",
-  "description": "Make a image look like it got taken with potato.",
+  "description": "potato",
   "main": "index.js",
   "scripts": {
     "potatify": "node index.js"

@@ -1,6 +1,6 @@
 # potatify
 
-Make a image look like it got taken with potato.
+potato
 
 ## Requirements
 
