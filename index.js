@@ -3,7 +3,11 @@ var path = require('path');
 var Promise = require('bluebird');
 var express = require('express');
 var multer = require('multer');
+var mkdirp = require('mkdirp');
 var app = express();
+
+mkdirp('./uploads', function() {});
+mkdirp('./potatoes', function() {});
 
 var storage = multer.diskStorage({
   destination: function (req, file, cb) {

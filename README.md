@@ -18,8 +18,8 @@ $ npm install
 
 ## Usage
 
-Run:
+Run the app at [http://localhost:8080](http://localhost:8080):
 
 ```
-$ npm run potatify -- path/to/filename.jpg
+$ npm start
 ```
