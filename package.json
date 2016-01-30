@@ -4,13 +4,15 @@
   "description": "potato",
   "main": "index.js",
   "scripts": {
-    "potatify": "node index.js"
+    "start": "node index.js"
   },
   "author": "potato",
   "license": "MATT",
   "dependencies": {
     "bluebird": "^3.1.5",
+    "express": "^4.13.4",
     "gm": "^1.21.1",
+    "multer": "^1.1.0",
     "path": "^0.12.7"
   }
 }
