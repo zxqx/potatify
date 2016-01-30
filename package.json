@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "potato",
   "main": "index.js",
+  "engines": {
+    "node": "4.2.4"
+  },
   "scripts": {
     "start": "node index.js"
   },
