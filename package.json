@@ -9,6 +9,7 @@
   "author": "potato",
   "license": "MATT",
   "dependencies": {
+    "bluebird": "^3.1.5",
     "gm": "^1.21.1"
   }
 }
