@@ -19,5 +19,5 @@ $ npm install
 Run:
 
 ```
-$ npm run potatify -- filename.jpg
+$ npm run potatify -- path/to/filename.jpg
 ```
