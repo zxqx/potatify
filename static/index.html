@@ -4,11 +4,30 @@
     <title>Potatify</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500" rel="stylesheet" type="text/css">
+    <style>
+      body {
+        font-family: 'Roboto Mono', monospace;
+        overflow-y: hidden;
+      }
+      form {
+        margin: 170px auto 0;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+      }
+      .button {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 20px;
+      }
+    </style>
   </head>
   <body>
     <form method="post" enctype="multipart/form-data" action="/potatify">
-      <input type="file" name="file">
-      <input type="submit" value="Submit">
+      <input type="file" name="file" class="file-input">
+
+      <input type="submit" class="button" value="potatify">
     </form>
     <script src="./main.js"></script>
   </body>
