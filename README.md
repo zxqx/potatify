@@ -1,5 +1,7 @@
 # potatify
 
+Makes a image look like it got taken with a potato.
+
 ## Requirements
 
 + NodeJS
