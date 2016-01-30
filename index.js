@@ -1,23 +1,24 @@
 var gm = require('gm');
+var path = require('path');
 var Promise = require('bluebird');
-var filename = process.argv[2];
-var filenameParts = filename.split('.');
-var filenameWithoutExtension = filenameParts[0];
-var filenameExtension = filenameParts[1];
-var output = filenameWithoutExtension + '-potatified.' + filenameExtension;
+
+var filepath = process.argv[2];
+var parsedFilepath = path.parse(filepath);
+var outputFilename = parsedFilepath.name + '-potatified' + parsedFilepath.ext;
+var outputFilepath = path.join(parsedFilepath.dir, outputFilename);
 
 Promise.promisifyAll(gm.prototype);
 
-gm(filename).sizeAsync()
+gm(filepath).sizeAsync()
   .then(function(size) {
     var width = size.width;
 
-    return gm(filename)
+    return gm(filepath)
       .resize(width/2)
       .resize(width)
       .quality(7)
-      .writeAsync(output)
+      .writeAsync(outputFilepath);
   })
   .then(function() {
-    console.log('potato');
+    console.log('potato: ' + outputFilepath);
   });
