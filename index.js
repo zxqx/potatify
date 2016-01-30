@@ -1,3 +1,3 @@
 var gm = require('gm');
 
-gm('./man.jpg').quality(5).write('./man-potatified.jpg', function() {});
+gm('./bval.jpg').resize(150).resize(300).quality(7).write('./bval-potatified.jpg', function() {});
