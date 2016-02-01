@@ -13,7 +13,7 @@ let storage = multer.diskStorage({
   filename: (req, file, cb) => cb(null, file.originalname)
 });
 
-let upload = multer({ storage: storage });
+let upload = multer({ storage });
 let port = process.env.PORT || 8080;
 let app = express();
 
