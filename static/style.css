@@ -1,0 +1,14 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  overflow-y: hidden;
+}
+form {
+  margin: 170px auto 0;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+.button {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+}
