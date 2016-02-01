@@ -7,11 +7,13 @@
     "node": "4.2.4"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node -r ./preamble.js index.js"
   },
   "author": "potato",
   "license": "MATT",
   "dependencies": {
+    "babel-polyfill": "^6.3.14",
+    "babel-register": "^6.4.3",
     "bluebird": "^3.1.5",
     "express": "^4.13.4",
     "gm": "^1.21.1",
