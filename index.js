@@ -3,7 +3,7 @@ import express from 'express';
 import multer from 'multer';
 import mkdirp from 'mkdirp';
 import potatify from './lib/potatify.js';
-import constants from './lib/constants.js';
+import * as constants from './lib/constants.js';
 
 mkdirp(constants.UPLOAD_DIR);
 mkdirp(constants.OUTPUT_DIR);
