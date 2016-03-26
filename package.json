@@ -1,7 +1,7 @@
 {
   "name": "potatify",
   "version": "1.0.0",
-  "description": "potato",
+  "description": "An image processing app to turn your hi-res images to potato quality",
   "main": "index.js",
   "engines": {
     "node": "4.2.4"
